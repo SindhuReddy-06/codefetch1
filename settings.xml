@@ -140,6 +140,12 @@ under the License.
 			<password>pWhdnHcG</password>
 		</server>
 		
+		<server>
+			<id>anypoint-exchange-v2</id>
+			<username>sindhuapril2021</username>
+			<password>Sindhu123$</password>
+		</server>
+		
 	</servers>
 	<!-- mirrors
    | This is a list of mirrors to be used in downloading artifacts from remote repositories.
