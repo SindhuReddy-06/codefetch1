@@ -139,6 +139,7 @@ under the License.
 			<username>apisero.nexus</username>
 			<password>pWhdnHcG</password>
 		</server>
+		
 	</servers>
 	<!-- mirrors
    | This is a list of mirrors to be used in downloading artifacts from remote repositories.
@@ -270,62 +271,7 @@ under the License.
 				</repository>
 			</repositories>
 		</profile>
-		<profile>
-			<id>standard-repositories</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<repositories>
-				<repository>
-					<id>Central</id>
-					<name>Central</name>
-					<url>https://repo1.maven.org/maven2/</url>
-					<layout>default</layout>
-				</repository>
-				<repository>
-					<id>anypoint-exchange</id>
-					<name>Anypoint Exchange</name>
-					<url>https://maven.anypoint.mulesoft.com/api/v1/maven</url>
-					<layout>default</layout>
-				</repository>
-				<repository>
-					<id>mulesoft-releases</id>
-					<name>MuleSoft Releases Repository</name>
-					<url>https://repository.mulesoft.org/releases/</url>
-					<layout>default</layout>
-				</repository>
-			</repositories>
-			<pluginRepositories>
-				<pluginRepository>
-					<id>mule-public</id>
-					<layout>default</layout>
-					<url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
-					<snapshots>
-						<enabled>false</enabled>
-					</snapshots>
-				</pluginRepository>
-				<pluginRepository>
-					<id>mulesoft-release</id>
-					<name>mulesoft release repository</name>
-					<layout>default</layout>
-					<url>https://repository.mulesoft.org/nexus/content/groups/public</url>
-					<snapshots>
-						<enabled>false</enabled>
-					</snapshots>
-				</pluginRepository>
-				<pluginRepository>
-					<id>mulesoft-ee-release</id>
-					<url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
-					<layout>default</layout>
-					<releases>
-						<enabled>true</enabled>
-					</releases>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-				</pluginRepository>
-			</pluginRepositories>
-		</profile>
+		
 	</profiles>
 	<!-- activeProfiles
    | List of profiles that are active for all builds.
