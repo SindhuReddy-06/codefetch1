@@ -8,7 +8,7 @@ http://www.mulesoft.org/schema/mule/project1 http://www.mulesoft.org/schema/mule
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="ac7fbcce-314a-45ef-92ec-c6dd5e85c614" >
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
-	<project1:config name="Project1_Config" doc:name="Project1 Config" doc:id="c426d447-da3b-437a-81ff-63b481e72079" property_port="443"/>
+	<project1:config name="Project1_Config" doc:name="Project1 Config" doc:id="c426d447-da3b-437a-81ff-63b481e72079" property_port="443" property_protocol="HTTPS"/>
 	<flow name="codefreshtestFlow" doc:id="34d9a77e-9150-4704-9fca-b0d3c1e91eaa" >
 		<http:listener doc:name="Listener" doc:id="7b64e0a9-0de6-45d6-b082-9131bab98298" config-ref="HTTP_Listener_config" path="/sample"/>
 		<project1:get-amsterdams doc:name="Get amsterdams" doc:id="4b84e5ff-37ce-417e-b00a-bb6848e1426c" config-ref="Project1_Config"/>
