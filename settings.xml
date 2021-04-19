@@ -131,8 +131,8 @@ under the License.
     -->
 	<server>
 			<id>Repository</id>
-			<username>sindhuapril2021</username>
-			<password>Sindhu123$</password>
+			<username>${username}</username>
+			<password>${password}</password>
 		</server>
 		<server>
 			<id>MuleRepository</id>
